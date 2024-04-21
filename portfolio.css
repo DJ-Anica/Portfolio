@@ -1,0 +1,523 @@
+/* HEADER */
+
+body {
+    margin: 0;
+}
+
+/* Initially hide the header */
+.fade-in-header {
+    opacity: 0;
+    transition: opacity 1.72s ease-in-out;
+}
+
+header {
+    background-color: #3ca386;
+    background-image: linear-gradient(#189975, #20cd9c);
+    color: #000;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    width: 30%; 
+}
+
+h1 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25em; 
+}
+
+h1 a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.26em;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 30px;
+    margin-right: 60px;
+    font-size: 1.15em;
+    font-weight: 600;
+    align-items: center;
+}
+
+nav ul li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #111;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+
+
+/* Index */
+
+.flexbox-container {
+    /*
+    box-shadow: 5px 10px #888888;
+    */
+    background-color: rgba(17, 24, 39, 1);
+    height: 400px;
+    block-size: auto;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 21.5vw;
+    margin-left: 195px;
+    margin-right: 195px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 1.07vw;
+    font-weight: 700;
+    border: 2px solid rgba(17, 24, 39, 1);
+    border-radius: 8px;
+}
+
+.social-links {
+    color: #189975;
+}
+
+.social-links:hover {
+    color: #20cd9c;
+}
+
+
+iframe {
+    display: block;
+    margin: 55px auto 65px auto;
+}
+
+
+#info {
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+#mobile {    
+    display: inline;
+    color: #000;
+    font-size: 1.5em;
+}
+
+#mobile:hover {    
+    display: inline;
+    color: white;
+    background-image: linear-gradient(#20cd9c, #189975);
+}
+
+#desktop {      
+    display: none;
+    color: #000;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    padding: 1em;
+    border-top: 2px solid #000;
+    background-color: #3ca386;
+    background-image: linear-gradient(#20cd9c, #189975);
+    color: rgba(17, 24, 39, 1);
+    font-size: .9em;
+    font-style:normal;
+    text-align: center;
+    font-weight: 600;
+}
+
+#footer-anchor {
+    font-size: 1.6em;
+    text-align: center;
+    align-items: center;
+    color: rgba(17, 24, 39, 1);
+    text-decoration: none;
+    transition: color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+#footer-anchor:hover {
+    font-size: 1.605em;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: rgba(17, 24, 39, 1);
+    text-decoration: none;
+    transition: color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+
+
+
+
+
+/* Start of FIRST Media Query */
+/* MOBILE */    
+@media screen and (max-width: 600px) {
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        width: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header>* {
+        text-align: center;
+        padding: auto;
+        flex: 1 100%;
+    }
+
+    h1 {
+        width: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        justify-content: center;
+        width: 80vw;
+        margin: 0 5px 0 5px;
+        padding: 10px 0 10px 0;
+
+    }
+
+    nav ul li {
+        display: block;
+        padding: 0px;
+        margin: 10px 0px 10px 0px;
+        font-size: 1.15em;
+        justify-content: center;
+        border-bottom: 2px solid #333;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none; 
+    }
+
+    /* INDEX */
+
+    #homebanner {
+        height: 300px;
+    }
+
+    .flexbox-container {
+        width: 90vw;
+        margin: 0;
+        padding: 0 9px 0 9px;
+        margin: 0 5px 0 5px;
+    }
+
+    .flexbox1 {
+        font-size: 2.25vw;
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .flexbox2 {
+        font-size: 2.05vw;
+        width: auto;
+        padding-left: 5px;
+        padding-right: 15px;
+        margin-right: 10px;
+        text-align: left;
+    }
+
+    .content-table {
+        width: 90%;
+        border-collapse: collapse;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        font-size: 0.9em;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("technique.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+
+    /* CLASSES PAGE */
+
+    #classes {
+        margin: 30px 5px 40px 5px;
+    }
+
+    #class-text {
+        margin: 20px 10px 30px;
+        padding: 5px 30px;
+    }
+
+    #classes {
+        display: block; 
+        margin-bottom: 20px; 
+    }
+
+    #classes-container {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    /* SCHEDULE PAGE */
+
+    .page-content {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; 
+    }
+    
+    .schedule-container {
+        display: flex;
+        flex: 1;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .schedule-box {
+        margin-bottom: 20px; 
+        width: 80%;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .schedule-box > p {
+        text-align: left;
+        margin: 15px auto;
+        max-width: 40%; 
+    }
+
+    #schedule-wrapper {
+        height: auto;
+        background-image: url("sparring.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+    }
+
+}
+
+
+/* SECOND media query */
+/* Tablet */
+
+@media screen and (min-width: 601px) and (max-width: 1150px) {
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        width: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header>* {
+        text-align: center;
+        padding: auto;
+        flex: 1 100%;
+    }
+
+    h1 {
+        width: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        justify-content: center;
+        width: 80vw;
+        margin: 0 5px 0 5px;
+        padding: 10px 0 10px 0;
+
+    }
+
+    nav ul li {
+        display: block;
+        padding: 0px;
+        margin: 10px 0px 10px 0px;
+        font-size: 1.15em;
+        justify-content: center;
+        border-bottom: 2px solid #333;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none; 
+    }
+
+    /* INDEX */
+
+    #homebanner {
+        height: 600px;
+    }
+
+    .flexbox-container {
+        width: 90vw;
+        margin: 0;
+        padding: 0 9px 0 9px;
+        margin: 0 5px 0 5px;
+    }
+
+    .flexbox1 {
+        font-size: 2.05vw;
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .flexbox2 {
+        font-size: 1.85vw;
+        width: auto;
+        padding-left: 5px;
+        padding-right: 15px;
+        margin-right: 10px;
+        text-align: left;
+    }
+
+    .content-table {
+        width: 80%;
+        border-collapse: collapse;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        font-size: 0.9em;
+        min-width: 200px;
+    }
+
+    img {
+        display: block;
+        width: 60%;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("technique.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+
+    /* CLASSES PAGE */
+
+    #classes {
+        margin: 30px 5px 40px 5px;
+    }
+
+    #class-text {
+        margin: 20px 10px 30px;
+        padding: 5px 30px;
+    }
+
+    #classes {
+        display: block; 
+        margin-bottom: 20px; 
+    }
+
+    #classes-container {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    /* SCHEDULE PAGE */
+
+    .page-content {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; 
+    }
+    
+    .schedule-container {
+        display: flex;
+        flex: 1;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .schedule-box {
+        margin-bottom: 20px; 
+        width: 80%;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .schedule-box > p {
+        text-align: left;
+        margin: 15px auto;
+        max-width: 40%;
+    }
+
+
+    #schedule-wrapper {
+        height: auto;
+        background-image: url("sparring.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+    }
+}
