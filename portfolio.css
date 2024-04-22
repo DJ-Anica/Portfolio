@@ -22,7 +22,7 @@ header {
 
 h1 {
     margin: 0;
-    width: 30%; 
+    width: 30%;
 }
 
 h1 a {
@@ -39,13 +39,14 @@ h1 a:hover {
 
 nav {
     width: 70%;
-    display: flex;
-    justify-content: flex-end;
+    display: inline;
+    justify-content: space-between;
     align-items: center;
     padding: 0;
 }
 
 nav ul {
+    display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -58,8 +59,8 @@ nav li {
 
 nav ul li {
     display: inline;
-    margin-left: 30px;
-    margin-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1.15em;
     font-weight: 600;
     align-items: center;
@@ -108,6 +109,19 @@ h2 {
     font-weight: 700;
     border: 2px solid rgba(17, 24, 39, 1);
     border-radius: 8px;
+    opacity: 0; /* Initially hidden */
+    animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .social-links {
@@ -195,11 +209,11 @@ footer {
 @media screen and (max-width: 600px) {
 
     #mobile {
-        display: none;
+        display: inline;
     }
 
     #desktop {
-        display: inline;
+        display: none;
     }
 
     header {
@@ -208,6 +222,7 @@ footer {
         width: auto;
         flex-direction: column;
         padding: 10px;
+        align-items: center;
     }
 
     header>* {
@@ -219,15 +234,20 @@ footer {
     h1 {
         width: auto;
         text-align: center;
-        margin-bottom: 10px;
+        margin: 10px 0 0 0;
     }
 
     nav {
         justify-content: center;
         width: 80vw;
         margin: 0 5px 0 5px;
-        padding: 10px 0 10px 0;
+        padding: 0;
 
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
     }
 
     nav ul li {
@@ -245,113 +265,29 @@ footer {
 
     /* INDEX */
 
-    #homebanner {
-        height: 300px;
-    }
 
     .flexbox-container {
         width: 90vw;
-        margin: 0;
-        padding: 0 9px 0 9px;
-        margin: 0 5px 0 5px;
-    }
-
-    .flexbox1 {
-        font-size: 2.25vw;
-        width: auto;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .flexbox2 {
-        font-size: 2.05vw;
-        width: auto;
-        padding-left: 5px;
-        padding-right: 15px;
-        margin-right: 10px;
-        text-align: left;
-    }
-
-    .content-table {
-        width: 90%;
-        border-collapse: collapse;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-        font-size: 0.9em;
-    }
-
-    img {
         display: block;
-        width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url("technique.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
+        padding: 0 9px 0 9px;
+        margin: 0 auto 0 auto;
+        font-size: 3vw;
     }
 
-
-    /* CLASSES PAGE */
-
-    #classes {
-        margin: 30px 5px 40px 5px;
+    .flexbox-container p {
+        width: fit-content;
+        margin: 20px auto 20px auto;
     }
 
-    #class-text {
-        margin: 20px 10px 30px;
-        padding: 5px 30px;
+    .flexbox-container ul {
+        width: fit-content;
+        margin: 0 auto 0 auto;
     }
 
-    #classes {
-        display: block; 
-        margin-bottom: 20px; 
+    iframe {
+        width: auto;
     }
 
-    #classes-container {
-        display: flex;
-        flex-direction: column; 
-    }
-
-    /* SCHEDULE PAGE */
-
-    .page-content {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh; 
-    }
-    
-    .schedule-container {
-        display: flex;
-        flex: 1;
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center;
-        margin-bottom: 40px;
-    }
-
-    .schedule-box {
-        margin-bottom: 20px; 
-        width: 80%;
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .schedule-box > p {
-        text-align: left;
-        margin: 15px auto;
-        max-width: 40%; 
-    }
-
-    #schedule-wrapper {
-        height: auto;
-        background-image: url("sparring.jpg");
-        background-size: cover;
-        background-repeat: repeat;
-        background-position: center;
-    }
 
 }
 
@@ -361,11 +297,11 @@ footer {
 
 @media screen and (min-width: 601px) and (max-width: 1150px) {
     #mobile {
-        display: none;
+        display: inline;
     }
 
     #desktop {
-        display: inline;
+        display: none;
     }
 
     header {
@@ -374,6 +310,7 @@ footer {
         width: auto;
         flex-direction: column;
         padding: 10px;
+        align-items: center;
     }
 
     header>* {
@@ -385,15 +322,20 @@ footer {
     h1 {
         width: auto;
         text-align: center;
-        margin-bottom: 10px;
+        margin: 10px 0 0 0;
     }
 
     nav {
         justify-content: center;
         width: 80vw;
         margin: 0 5px 0 5px;
-        padding: 10px 0 10px 0;
+        padding: 0;
 
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
     }
 
     nav ul li {
@@ -411,113 +353,34 @@ footer {
 
     /* INDEX */
 
-    #homebanner {
-        height: 600px;
-    }
 
     .flexbox-container {
         width: 90vw;
-        margin: 0;
-        padding: 0 9px 0 9px;
-        margin: 0 5px 0 5px;
-    }
-
-    .flexbox1 {
-        font-size: 2.05vw;
-        width: auto;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .flexbox2 {
-        font-size: 1.85vw;
-        width: auto;
-        padding-left: 5px;
-        padding-right: 15px;
-        margin-right: 10px;
-        text-align: left;
-    }
-
-    .content-table {
-        width: 80%;
-        border-collapse: collapse;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
-        font-size: 0.9em;
-        min-width: 200px;
-    }
-
-    img {
         display: block;
-        width: 60%;
-        height: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: url("technique.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
+        padding: 0 9px 0 9px;
+        margin: 0 auto 0 auto;
+        font-size: 1.66vw;
     }
 
-
-    /* CLASSES PAGE */
-
-    #classes {
-        margin: 30px 5px 40px 5px;
+    .flexbox-container p {
+        width: fit-content;
+        margin: 20px auto 20px auto;
     }
 
-    #class-text {
-        margin: 20px 10px 30px;
-        padding: 5px 30px;
-    }
-
-    #classes {
-        display: block; 
-        margin-bottom: 20px; 
-    }
-
-    #classes-container {
-        display: flex;
-        flex-direction: column; 
-    }
-
-    /* SCHEDULE PAGE */
-
-    .page-content {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh; 
+    .flexbox-container ul {
+        width: fit-content;
+        margin: 0 auto 0 auto;
     }
     
-    .schedule-container {
-        display: flex;
-        flex: 1;
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center;
-        margin-bottom: 40px;
-    }
-
-    .schedule-box {
-        margin-bottom: 20px; 
-        width: 80%;
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .schedule-box > p {
-        text-align: left;
-        margin: 15px auto;
-        max-width: 40%;
-    }
 
 
-    #schedule-wrapper {
-        height: auto;
-        background-image: url("sparring.jpg");
-        background-size: cover;
-        background-repeat: repeat;
-        background-position: center;
-    }
+    /* HTML/CSS PAGE */
+
+   
+
+
+    /* WORDPRESS PAGE */
+
+    
+
 }
