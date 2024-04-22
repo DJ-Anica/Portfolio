@@ -129,12 +129,12 @@ h2 {
 
 .flexbox-container p {
     margin: 0 auto 5px auto; /* Centers the content */
-    max-width: 30%; /* Adjust as needed */
+    max-width: 40vw; /* Adjust as needed */
 }
 
 .flexbox-container ul {
     margin: 0 auto 15px auto; /* Centers the content */
-    max-width: 22%; /* Adjust as needed */
+    max-width: 30vw; /* Adjust as needed */
 }
 
 
@@ -293,12 +293,12 @@ footer {
 
     .flexbox-container p {
         margin: 20px auto 5px auto; /* Centers the content */
-        max-width: 60%; /* Adjust as needed */
+        max-width: 65vw; /* Adjust as needed */
     }
     
     .flexbox-container ul {
         margin: 0 auto 15px auto; /* Centers the content */
-        max-width: 50%; /* Adjust as needed */
+        max-width: 60vw; /* Adjust as needed */
     }
 
 
