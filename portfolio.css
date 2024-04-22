@@ -291,12 +291,12 @@ footer {
 
     .flexbox-container p {
         margin: 20px auto 5px auto; /* Centers the content */
-        max-width: 60%; /* Adjust as needed */
+        max-width: 69%; /* Adjust as needed */
     }
     
     .flexbox-container ul {
         margin: 0 auto 15px auto; /* Centers the content */
-        max-width: 50%; /* Adjust as needed */
+        max-width: 60%; /* Adjust as needed */
     }
 
 
