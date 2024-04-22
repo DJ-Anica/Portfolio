@@ -9,4 +9,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     setTimeout(function() {
         header.style.opacity = 1;
     }, 100);
+
+    // Get the flexbox container element
+    var flexboxContainer = document.querySelector(".flexbox-container");
+
+    // Add a class to show the flexbox container with a fade-in effect
+    flexboxContainer.classList.add("fade-in");
 });
