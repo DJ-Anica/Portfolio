@@ -1,3 +1,4 @@
+
 /* HEADER */
 
 body {
@@ -237,7 +238,8 @@ footer {
         padding: 10px;
         align-items: center;
         background-color: #3ca386;
-        background-image: linear-gradient(#158a69, #20cd9c);
+        background-image: linear-gradient(#08523d, #20cd9c);
+        /* background-image: radial-gradient(circle 70vh at 50% 60%, #095732, #55df75); */
     }
 
     header>* {
@@ -291,12 +293,12 @@ footer {
 
     .flexbox-container p {
         margin: 20px auto 5px auto; /* Centers the content */
-        max-width: 69%; /* Adjust as needed */
+        max-width: 60%; /* Adjust as needed */
     }
     
     .flexbox-container ul {
         margin: 0 auto 15px auto; /* Centers the content */
-        max-width: 60%; /* Adjust as needed */
+        max-width: 50%; /* Adjust as needed */
     }
 
 
