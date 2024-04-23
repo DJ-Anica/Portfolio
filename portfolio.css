@@ -125,12 +125,12 @@ h2 {
 
 .flexbox-container p {
     margin: 0 auto 5px auto; 
-    max-width: 80vw;
+    max-width: 35vw;
 }
 
 .flexbox-container ul {
     margin: 0 auto 15px 25px; 
-    max-width: 70vw; 
+    max-width: 30vw; 
 }
 
 
