@@ -129,11 +129,9 @@ h2 {
 }
 
 .flexbox-container ul {
-    margin: 0 auto; 
+    margin: 0 auto 15px 15px; 
     max-width: 30vw; 
 }
-
-
 
 .social-links {
     color: #189975;
