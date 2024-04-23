@@ -85,6 +85,7 @@ nav ul li a:hover {
 h2 {
     text-align: center;
     font-size: 3em;
+    margin: 40px auto 50px auto;
 }
 
 
@@ -92,9 +93,6 @@ h2 {
 /* INDEX */
 
 .flexbox-container {
-    /*
-    box-shadow: 5px 10px #888888;
-    */
     background-color: rgba(17, 24, 39, 1);
     height: 400px;
     block-size: auto;
@@ -104,7 +102,7 @@ h2 {
     margin-right: 195px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
-    font-size: 1.33vw;
+    font-size: 1.5vw;
     font-weight: 700;
     border: 2px solid rgba(17, 24, 39, 1);
     border-radius: 8px;
@@ -123,20 +121,21 @@ h2 {
     }
 }
 
-.flexbox-container p {
-    margin: 0 auto 5px auto; 
-    max-width: 23vw;
-}
-
-.flexbox-container ul {
-    margin: 0 auto 15px auto; 
-    max-width: 19vw; 
-}
-
 .container {
     width: fit-content;
     margin: 0 auto 15px auto;
 }
+
+.flexbox-container p {
+    margin: 0 auto 5px auto; 
+    max-width: none;
+}
+
+.flexbox-container ul {
+    margin: 0 auto 15px 25px; 
+    max-width: none; 
+}
+
 
 
 .social-links {
@@ -189,14 +188,14 @@ footer {
     background-color: #3ca386;
     background-image: linear-gradient(#20cd9c, #189975);
     color: rgba(17, 24, 39, 1);
-    font-size: .9em;
+    font-size: .8em;
     font-style:normal;
     text-align: center;
     font-weight: 600;
 }
 
 #footer-anchor {
-    font-size: 1.6em;
+    font-size: 1.35em;
     text-align: center;
     align-items: center;
     color: rgba(17, 24, 39, 1);
@@ -205,7 +204,7 @@ footer {
 }
 
 #footer-anchor:hover {
-    font-size: 1.605em;
+    font-size: 1.37em;
     text-align: center;
     align-items: center;
     color: #ffffff;
@@ -287,11 +286,12 @@ footer {
         display: block;
         padding: 0 9px 0 9px;
         margin: 0 auto 0 auto;
-        font-size: 3vw;
+        font-size: 22px;
     }
 
     .container {
         width: fit-content;
+        margin: 0 auto 15px auto;
     }
 
     .flexbox-container p {
@@ -300,8 +300,8 @@ footer {
     }
 
     .flexbox-container ul {
-        margin: 0 auto 0 auto;
-        max-width: 40vw;
+        max-width: none;
+        margin-left: 15px;
     }
 
     iframe {
@@ -383,12 +383,12 @@ footer {
         display: block;
         padding: 0 9px 0 9px;
         margin: 0 auto 0 auto;
-        font-size: 3vw;
+        font-size: 3.3vw;
     }
 
     .flexbox-container p {
         margin: 20px auto 5px auto; /* Centers the content */
-        max-width: 65vw; /* Adjust as needed */
+        max-width: none; /* Adjust as needed */
     }
     
     .flexbox-container ul {
@@ -396,9 +396,14 @@ footer {
         max-width: 60vw; /* Adjust as needed */
     }
 
+    .container {
+        width: fit-content;
+        margin: 0 auto 15px auto;
+    }
+
 
     iframe {
-        width: auto;
+        width: 85vw;
     }
 
 
@@ -474,7 +479,12 @@ footer {
         display: block;
         padding: 0 9px 0 9px;
         margin: 0 auto 0 auto;
-        font-size: 4vw;
+        font-size: 15px;
+    }
+    
+    .container {
+        width: fit-content;
+        margin: 0 auto 15px auto;
     }
 
     .flexbox-container p {
@@ -489,7 +499,7 @@ footer {
 
 
     iframe {
-        width: auto;
+        width: 90vw;
     }
 
 
