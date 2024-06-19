@@ -163,13 +163,13 @@ iframe {
 }
 
 #info {
-    margin: 30px 0 35px;
+    margin: 50px 0 35px;
     text-align: center;
     color: #000;
 }
 
 #mobile {
-    display: inline;
+    display: none;
     color: #000;
     font-size: 1.5em;
 }
@@ -180,7 +180,7 @@ iframe {
 }
 
 #desktop {
-    display: none;
+    display: inline;
     color: #000;
 }
 
@@ -473,6 +473,26 @@ footer {
         display: flex;
     }
 
+    #info {
+        line-height: 90%;
+    }
+
+    #mobile {
+        display: inline;
+        color: #000;
+        font-size: 1.5em;
+    }
+    
+    #mobile:hover {
+        color: white;
+        background: linear-gradient(#20cd9c, #189975);
+    }
+    
+    #desktop {
+        display: none;
+        color: #000;
+    }
+
 }
 
 
@@ -485,6 +505,7 @@ footer {
     iframe {
         width: 90%;
     }
+
 }
 
 
