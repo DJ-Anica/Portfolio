@@ -323,6 +323,10 @@ footer {
         padding: 0 30px;
     }
 
+    .project-links {
+        margin-bottom: 20px;
+    }
+
     #desktop {
         display: block;
         font-size: 1.5em;
@@ -430,6 +434,10 @@ footer {
         width: 100%;
     }
 
+    .project-links {
+        margin: 0 auto 20px auto;
+    }
+
     #desktop {
         display: block;
         font-size: 1.5em;
@@ -484,6 +492,10 @@ footer {
 
     main {
         margin-top: 110px;
+    }
+
+    .item h3 {
+        text-align: center;
     }
 }
 
