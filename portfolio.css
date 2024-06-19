@@ -45,7 +45,7 @@ nav {
     width: 70%;
     display: flex;
     justify-content: flex-start;
-    padding-right: 40px;
+    padding-right: 10px;
 }
 
 nav ul {
@@ -66,6 +66,7 @@ nav li a {
     color: #000;
     text-decoration: none;
     padding: 5px 10px;
+    margin-right: 20px;
 }
 
 nav li a:hover {
@@ -94,7 +95,7 @@ h2 {
     max-width: 800px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     font-weight: 700;
     border: 2px solid rgba(17, 24, 39, 1);
     border-radius: 8px;
@@ -209,6 +210,7 @@ footer {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -220,28 +222,104 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 830px) {
+@media screen and (max-width: 1334px) {
+
+    main {
+        margin-top: 155px;
+    }
+
     .container {
-        margin: 0 40px;
+        margin: 0 auto 30px auto;
     }
 
     h1 {
         margin-top: 10px;
+        width: 40%;
     }
 }
 
-@media (max-width: 400px) {
-    nav ul {
-        display: block;
-    }
 
-    nav li {
-        margin-top: 10px;
-        display: block;
+
+@media screen and (max-width: 1122px) {
+
+    main {
+        margin-top: 155px;
     }
 
     h1 {
+        width: 50%;
+    }
+
+}
+
+
+@media screen and (max-width: 1054px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        padding: 15px 25px 10px 25px
+    }
+
+    h1 {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    nav {
+        width: 70%;
+        height: 60px;
+        border: #111;
+        background-color: #1caa82;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .menu-text {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        margin: 0;
+        display: block;
+        text-align: center;
+        border-top: 1px solid #158a69;
+        border-bottom: 1px solid #158a69;
+    }
+
+    nav li a {
+        display: block;
+        padding: 10px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .dropdown:hover ul {
+        display: flex;
+    }
+
+    main {
+        margin-top: 155px;
+    }
+
+    .container {
+        margin: 0 5% 30px 5%;
+        font-size: 1.25em;
+    }
+
+    .container .item {
+        margin: 0 auto;
+        padding: 0 30px;
     }
 
     #desktop {
@@ -251,5 +329,138 @@ footer {
 
     #mobile {
         display: none;
+    }
+}
+
+@media screen and (min-width: 799px) {
+    .menu-text {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    main {
+        margin-top: 135px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 25px 10px 25px;
+        margin: 0 auto 0 auto;
+        width: 90%;
+    }
+
+    h1 {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-size: 6vw;
+    }
+
+    nav {
+        width: 70%;
+        height: 20px;
+        border: #198711;
+        background-color: #1caa82;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul {
+        display: none;
+        padding: 0;
+        text-align: center;
+        flex-direction: column;
+        background-color: #20cd9c;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        margin: 0;
+        z-index: 999;
+    }
+
+    nav li {
+        margin: 0;
+        display: block;
+        text-align: center;
+        border-top: 1px solid #158a69;
+        border-bottom: 1px solid #158a69;
+    }
+
+    nav li a {
+        display: block;
+        padding: 10px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .dropdown:hover ul {
+        display: flex;
+    }
+
+    h2 {
+        font-size: 6.5vw;
+        font-weight: 900;
+    }
+
+    .container {
+        margin: 0 5% 30px 5%;
+        font-size: 1.05em;
+    }
+
+    .container .item {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    #desktop {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    #mobile {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .menu-text {
+        display: inline;
+    }
+
+    nav ul {
+        display: none;
+        padding: 0;
+        text-align: center;
+        flex-direction: column;
+        background-color: #20cd9c;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        margin: 0;
+        z-index: 999;
+    }
+
+    .dropdown:hover ul {
+        display: flex;
     }
 }
