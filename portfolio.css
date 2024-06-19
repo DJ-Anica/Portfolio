@@ -435,7 +435,7 @@ footer {
     }
 
     .project-links {
-        margin: 0 auto 20px auto;
+        margin: 15px auto 30px auto;
     }
 
     #desktop {
@@ -500,6 +500,7 @@ footer {
 
     .project-links {
         text-align: center;
+        line-height: 80%;
     }
 }
 
