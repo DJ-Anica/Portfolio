@@ -135,6 +135,11 @@ h2 {
     margin-bottom: 5px;
 }
 
+.summary {
+    font-size: 1em;
+    font-weight: 475;
+}
+
 .social-links {
     color: #189975;
     text-decoration: none;
@@ -152,7 +157,7 @@ h2 {
 
 .project-links:hover {
     color: #20cd9c;
-    font-size: 1.3em;
+    font-size: 1.265em;
     text-transform: uppercase;
 }
 
