@@ -160,6 +160,7 @@ h2 {
 iframe {
     display: block;
     margin: 55px auto 65px;
+    width: 560px;
 }
 
 #info {
@@ -236,6 +237,7 @@ footer {
         margin-top: 10px;
         width: 40%;
     }
+
 }
 
 
@@ -357,7 +359,7 @@ footer {
         text-align: center;
         padding: 15px 25px 10px 25px;
         margin: 0 auto 0 auto;
-        width: 90%;
+        width: 100%;
     }
 
     h1 {
@@ -462,5 +464,13 @@ footer {
 
     .dropdown:hover ul {
         display: flex;
+    }
+
+}
+
+
+@media screen and (max-width: 575px) {
+    iframe {
+        width: 90%;
     }
 }
