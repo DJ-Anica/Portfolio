@@ -66,7 +66,6 @@ nav li a {
     color: #000;
     text-decoration: none;
     padding: 5px 10px;
-    margin-right: 20px;
 }
 
 nav li a:hover {
@@ -470,7 +469,27 @@ footer {
 
 
 @media screen and (max-width: 575px) {
+
+    header {
+        margin: 0 auto 0 auto;
+        padding: 10px 0 5px 0;
+    }
     iframe {
         width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    main {
+        margin-top: 110px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    h2 {
+        font-size: 7.5vw;
     }
 }
