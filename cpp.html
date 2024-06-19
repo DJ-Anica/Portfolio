@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="David Anica">
-  <title>David Anica's CPP Portfolio</title>
+  <title>David Anica's C++ (cpp) Portfolio</title>
   <link rel="stylesheet" href="portfolio.css">
 </head>
 
@@ -15,47 +15,131 @@
     <h1>
       <a href="index.html">David Anica's Portfolio</a>
     </h1>
-    <nav>
+    <nav class="dropdown">
+      <span class="menu-text">Menu</span>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="html css.html">My HTML/CSS Projects</a></li>
-        <li><a href="wordpress.html">My Wordpress Projects</a></li>
-        <li><a href="cpp.html">My C++ Projects</a></li>
-        <li><a href="python.html">My Python Projects</a></li>
+        <li><a href="html css.html">HTML/CSS Projects</a></li>
+        <li><a href="wordpress.html">WordPress Projects</a></li>
+        <li><a href="cpp.html">C++ Projects</a></li>
+        <li><a href="python.html">Python Projects</a></li>
       </ul>
-    </nav>
+    </nav>       
   </header>
 
   <main>
-    <h2>Hello, I'm David Anica!</h2>
+    <h2>👨🏽‍💻 My C++ Projects:</h2>
+
     <div class="flexbox-container">
+
       <div class="container">
-        <p>
-          My C++ Projects:<br><br>
-          <h3>🚧 COMING SOON 🏗️</h3><br>
-          
-          </p>
-          <p>
-          📫 My other links:
-        <ul>
-          <li>LinkedIn (<a href="https://www.linkedin.com/in/david-anica-pk/" target="_blank" class="social-links">@david-anica-pk</a>)
-          </li>
-          <li>YouTube (<a href="https://www.youtube.com/@AnicaTechDev" target="_blank" class="social-links">@AnicaTechDev</a>)
-          </li>
-        </ul>
-        </p>
+        <div class="item">
+          <h3>💻 Tower of Hanoi - Recursion</h3>
+          <div class="item">
+            <a href="https://replit.com/@DAVIDANICA/Tower-of-Hanoi-Recursion" target="_blank" class="project-links">Tower of Hanoi</a>
+          </div>
+        </div>
+        <div class="item summary">
+          This program not only highlights my ability to implement classic algorithms but also demonstrates my skills in managing user input, dynamic data structures, and recursive programming.<br><br>
+          The clear visual representation of the towers enhances user understanding, showcasing my attention to detail in user interface design and my problem-solving abilities.<br><br>
+          <u>Key highlights</u>
+          <b>Data Structures</b> Employs vectors to represent the towers and the disks on them, showcasing the ability to use dynamic arrays.<br><br>
+          <b>Algorithm Implementation</b> Implements the recursive Tower of Hanoi algorithm, demonstrating an understanding of recursion and algorithmic problem solving.<br>
+        </div>
       </div>
+
+
+      <div class="container">
+        <div class="item">
+          <h3>💻 COMPSCI-2 Keypad Word Match Project</h3>
+          <div class="item">
+            <a href="https://replit.com/@DAVIDANICA/Keypad-Word-Match" target="_blank" class="project-links">Keypad Word Match</a>
+          </div>
+        </div>
+
+        <div class="item summary">
+          In this project, I developed a program that transforms numeric input into possible letter combinations, akin to the T9 text input method, and checks these combinations against a dictionary to find valid words.<br><br>
+          This project highlights my skills in file I/O operations, efficient data structure usage, recursive algorithm design, and string manipulation.<br><br>
+          <u>Key highlights</u>
+          <b>Data Structures</b> Uses 'unordered_set' for efficient word lookup and 'vector' to store combinations and results.<br><br>
+          <b>String Manipulation</b> Performs string transformations and filtering, highlighting proficiency in handling and manipulating strings in C++.<br><br>
+          <b>Recursion</b> Implements a recursive backtracking algorithm to generate all potential letter combinations from numeric input.<br><br>
+          <b>Dictionary Lookup</b> Loads a dictionary of valid words from a file (words.txt) and uses it to verify if the generated combinations are actual words.<br><br>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="item">
+          <h3>💻 Sequential Number Filling 10x10 Grid</h3>
+          <div class="item">
+            <a href="https://replit.com/@DAVIDANICA/Sequential-Number-Filling" target="_blank" class="project-links">Seq. Num. Fill Program</a>
+          </div>
+        </div>
+
+        <div class="item summary">
+          The project involves filling a 10x10 grid with sequential numbers starting from a specified position, ensuring each number occupies a dedicated spot formatted to a consistent 4-character width.<br><br>
+          This process utilizes the Depth-First Search (DFS) algorithm to systematically explore and fill the grid while adhering to boundary constraints and maintaining proper alignment.<br><br>
+          <u>Key highlights</u>
+          <b>Data Structures</b> Effective use of stacks for managing the depth-first search algorithm.<br><br>
+          <b>Depth-First Search (DFS)</b> Used to recursively explore and fill the grid, ensuring each cell is visited and numbered sequentially.<br><br>
+          <b>Recursion</b> Demonstrates ability to implement and manage a recursive algorithm with backtracking to achieve the desired filling pattern.<br><br>
+          <b>Formatted Output</b> Utilizes 'iomanip' to ensure each number is displayed in a clear and aligned format within the grid cells.<br><br>
+          <b>Interactive User Interface</b> Prompts users to enter the starting position and displays the filled grid in a structured manner.<br><br>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="item">
+          <h3>💻 COMPSCI-2 Student Info Management</h3>
+          <div class="item"><a href="https://replit.com/@DAVIDANICA/Ch-7-8-Project" target="_blank"
+              class="project-links">Student Info Mgmt</a></div>
+        </div>
+        <div class="item summary">
+          This program reads student data, validates the input, sorts students by their grades, and displays them grouped by grade.<br><br>
+          <u>Key highlights</u>
+          <b>Data Structures</b> Uses 'std::vector' to store and manage student records dynamically.<br><br>
+          <b>Sorting</b> Utilizes the 'std::sort' function to arrange students in ascending order based on grades.<br><br>
+          <b>Input Handling</b> Accepts multiple lines of input until terminated by 'ctrl + d', capturing student details dynamically.<br><br>
+          <b>Output Formatting</b> Presents students grouped by their grades ('A' to 'F'), excluding 'E', with each group displayed sequentially.<br><br>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="item">
+          <h3>💻 COMPSCI-1 TicTacToe Project</h3>
+          <div class="item"><a href="https://replit.com/@DAVIDANICA/C-Final-Project-TicTacToe" target="_blank"
+              class="project-links">C++ TicTacToe Game</a></div>
+        </div>
+        <div class="item summary">
+          For my COMPSCI-1 Final project, I was required to build a game that implemented the concepts learned in the course.<br>
+          (Functions, loops, I/O handling, static/constant members, error handling)<br><br>
+          I developed a console-based TicTacToe game that allows two players to take turns placing their marks on a 3x3 grid. The game includes features such as move validation, winner detection, and draw checking.<br>
+          This project was built using C++ and demonstrates my proficiency in object-oriented programming, control flow, and input/output handling.
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="item">
+          <h3>💻 COMPSCI-1 Cashier Project</h3>
+          <div class="item">
+            <a href="https://replit.com/@DAVIDANICA/COMPSCI-Project-1" target="_blank" class="project-links">Cash Register program</a>
+          </div>
+        </div>
+        <div class="item summary">
+          For my COMPSCI-1 class, I was required to build a cash register program for my midterm project.<br><br>
+          This program is what I submitted and it is the first C++ program that I ever created.
+        </div>
+      </div>
+
     </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/rF6mAxR9Gzk?si=XZ3MvxR8BpKgq00c"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    
+    <div id="info"></div>
   </main>
   <footer>
-    ©  2024  <a href="index.html" id="footer-anchor">David Anica</a>  All rights reserved.
+    © 2024 <a href="index.html" id="footer-anchor">David Anica</a> All rights reserved.
   </footer>
   <script src="script.js"></script>
 </body>
