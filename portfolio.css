@@ -157,8 +157,10 @@ h2 {
 
 .project-links:hover {
     color: #20cd9c;
-    font-size: 1.265em;
+    font-size: 1.255em;
     text-transform: uppercase;
+    text-align: center;
+    line-height: 90%;
 }
 
 iframe {
