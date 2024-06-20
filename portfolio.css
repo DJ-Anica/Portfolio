@@ -523,7 +523,7 @@ footer {
 @media screen and (max-width: 500px) {
 
     main {
-        margin-top: 110px;
+        margin-top: 130px;
     }
 
     .item h3 {
@@ -533,6 +533,10 @@ footer {
     .project-links {
         text-align: center;
         line-height: 80%;
+    }
+
+    h2 {
+        margin: 40px auto;
     }
 }
 
