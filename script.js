@@ -16,3 +16,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // Add a class to show the flexbox container with a fade-in effect
     flexboxContainer.classList.add("fade-in");
 });
+
+
+function myFunction(element) {
+    element.classList.toggle("change");
+    element.classList.toggle("show");
+  }
