@@ -145,6 +145,11 @@ h2 {
     display: block;
 }
 
+
+#js-disclaimer {
+    text-align: center;
+}
+
 .summary {
     font-size: 1em;
     font-weight: 475;
@@ -157,6 +162,20 @@ h2 {
 
 .social-links:hover {
     color: #20cd9c;
+}
+
+.inhouse-links {
+    color: #189975;
+    text-decoration: dotted;
+    font-size: 1.25em;
+}
+
+.inhouse-links:hover {
+    text-decoration: underline;
+    text-transform: none;
+    font-size: 1.25em;
+    font-weight: 550;
+    ;
 }
 
 .project-links {
