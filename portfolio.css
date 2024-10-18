@@ -603,6 +603,10 @@ footer {
         z-index: 999;
     }
 
+    .container {
+        padding: 30px 20px;
+    }
+
 
     #info {
         line-height: 90%;
