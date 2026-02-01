@@ -528,7 +528,7 @@ footer {
     }
 
     .container .item {
-        margin: 0 auto;
+        margin: 10px auto;
         padding: 0 5px;
         width: 100%;
     }
@@ -703,6 +703,7 @@ footer {
         font-size: 7.5vw;
     }
 }
+
 
 
 
