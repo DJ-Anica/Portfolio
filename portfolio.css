@@ -190,7 +190,7 @@ h2 {
 .summary {
     font-size: 1em;
     font-weight: 475;
-    width: 70%;
+    width: auto;
     margin: 0 auto;
 }
 
@@ -706,6 +706,7 @@ footer {
         font-size: 7.5vw;
     }
 }
+
 
 
 
