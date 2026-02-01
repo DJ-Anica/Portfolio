@@ -491,6 +491,7 @@ footer {
     }
 
     .container {
+        width: calc(100% - 10px);
         margin: 0 5% 30px 5%;
         font-size: 1.05em;
     }
@@ -632,7 +633,7 @@ footer {
 
 
     #info {
-        line-height: 90%;
+        line-height: 95%;
     }
 
     #mobile {
@@ -694,6 +695,7 @@ footer {
         font-size: 7.5vw;
     }
 }
+
 
 
 
