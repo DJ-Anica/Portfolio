@@ -90,16 +90,20 @@ h2 {
     opacity: 0;
 }
 
+/* Spacing between main sections */
 .flexbox-container {
-    min-height: 400px;
+    display: flex;
     flex-direction: column;
+    gap: 50px; /* space between container blocks */
+    min-height: 400px;
 }
 
+/* Individual container styling */
 .container {
     background-color: rgba(17, 24, 39, 1);
     text-align: left;
     padding: 50px;
-    margin: 0 auto 50px;
+    margin: 0 auto;
     max-width: 800px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
@@ -111,18 +115,17 @@ h2 {
     opacity: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start; /* left align text */
 }
 
+/* Spacing between items inside container */
 .container .item {
-    margin: 5px auto 15px auto;
+    margin-bottom: 25px; /* replaces <br> spacing */
     display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
-    text-align: left;
     flex-direction: column;
-    padding: 0 90px;
+    justify-content: flex-start;
+    align-items: flex-start;
     max-width: 590px;
 }
 
@@ -130,19 +133,31 @@ h2 {
     white-space: normal;
 }
 
+/* Headings and italicized text spacing */
+.item i {
+    display: block;
+    margin-bottom: 25px; /* spacing after italic paragraphs */
+}
+
+/* Hobbies, links, and portfolio items spacing */
+.item ul li {
+    line-height: 1.6;
+}
+
 .item h3 {
     margin: 0 auto 10px auto;
     text-align: center;
 }
 
+/* Lists spacing */
 .container ul {
-    margin: 0;
     padding-left: 3em;
-    list-style-type: disc;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .container ul li {
-    margin-bottom: 5px;
+    margin-bottom: 0.5em; /* vertical spacing between list items */
 }
 
 .container .disclaimer {
@@ -675,5 +690,6 @@ footer {
         font-size: 7.5vw;
     }
 }
+
 
 
