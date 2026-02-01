@@ -1,8 +1,12 @@
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* full viewport height */
 }
 
 main {
+    flex: 1; /* takes all available vertical space */
     margin-top: 140px;
 }
 
@@ -671,3 +675,4 @@ footer {
         font-size: 7.5vw;
     }
 }
+
