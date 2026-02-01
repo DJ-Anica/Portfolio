@@ -219,6 +219,7 @@ h2 {
     color: #189975;
     text-decoration: dotted;
     font-size: 1.25em;
+    margin: 0 auto;
 }
 
 .project-links:hover {
@@ -703,5 +704,6 @@ footer {
         font-size: 7.5vw;
     }
 }
+
 
 
