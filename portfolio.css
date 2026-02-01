@@ -129,7 +129,7 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    line-height: 1.6;
+    line-height: 1.3;
 }
 
 .item {
@@ -140,12 +140,12 @@ h2 {
 .item i {
     display: block;
     margin-bottom: 25px; /* spacing after italic paragraphs */
-    line-height: 1.6;
+    line-height: 1.3;
 }
 
 /* Hobbies, links, and portfolio items spacing */
 .item ul li {
-    line-height: 1.6;
+    line-height: 1.3;
 }
 
 .item h3 {
@@ -694,6 +694,7 @@ footer {
         font-size: 7.5vw;
     }
 }
+
 
 
 
