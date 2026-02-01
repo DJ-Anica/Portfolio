@@ -94,6 +94,7 @@ h2 {
 .flexbox-container {
     display: flex;
     flex-direction: column;
+    align-items: center; /* center containers horizontally */
     gap: 50px; /* space between container blocks */
     min-height: 400px;
 }
@@ -117,6 +118,8 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start; /* left align text */
+    max-width: 800px; /* all containers same width */
+    width: 100%;       /* responsive */
 }
 
 /* Spacing between items inside container */
@@ -126,7 +129,7 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    max-width: 590px;
+    line-height: 1.6;
 }
 
 .item {
@@ -137,6 +140,7 @@ h2 {
 .item i {
     display: block;
     margin-bottom: 25px; /* spacing after italic paragraphs */
+    line-height: 1.6;
 }
 
 /* Hobbies, links, and portfolio items spacing */
@@ -157,7 +161,7 @@ h2 {
 }
 
 .container ul li {
-    margin-bottom: 0.5em; /* vertical spacing between list items */
+    margin-bottom: 5px; /* vertical spacing between list items */
 }
 
 .container .disclaimer {
@@ -690,6 +694,7 @@ footer {
         font-size: 7.5vw;
     }
 }
+
 
 
 
