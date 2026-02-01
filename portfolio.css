@@ -7,7 +7,7 @@ body {
 
 main {
     flex: 1; /* takes all available vertical space */
-    margin-top: 140px;
+    margin-top: 90px;
 }
 
 /* Initially hide the header */
@@ -675,4 +675,5 @@ footer {
         font-size: 7.5vw;
     }
 }
+
 
