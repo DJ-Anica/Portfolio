@@ -136,7 +136,8 @@ h2 {
 
 /* Spacing between items inside container */
 .container .item {
-    margin-bottom: 25px; /* replaces <br> spacing */
+    width: 80%;
+    margin: 0 auto 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -692,6 +693,7 @@ footer {
         font-size: 7.5vw;
     }
 }
+
 
 
 
