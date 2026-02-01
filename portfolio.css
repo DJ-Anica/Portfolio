@@ -680,7 +680,7 @@ footer {
 @media screen and (max-width: 500px) {
 
     main {
-        margin-top: 130px;
+        margin-top: 110px;
     }
 
     .item h3 {
@@ -703,6 +703,7 @@ footer {
         font-size: 7.5vw;
     }
 }
+
 
 
 
