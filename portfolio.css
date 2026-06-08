@@ -136,8 +136,9 @@ h2 {
 
 /* Spacing between items inside container */
 .container .item {
-    width: 80%;
-    margin: 0 auto 25px;
+    width: fit-content;
+    margin: 0 auto 25px auto;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
