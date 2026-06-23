@@ -316,7 +316,10 @@ footer {
     opacity: 1;
 }
 
+
+/******************/
 /* MEDIA QUERIES */
+/******************/
 
 @media screen and (max-width: 1334px) {
 
@@ -532,28 +535,49 @@ footer {
         text-decoration: none;
     }
 
-    /*
-    .dropdown:hover ul {
-        display: flex;
-    }
-        */
-
     h2 {
         font-size: 6.5vw;
         font-weight: 900;
     }
 
+    .flexbox-container {
+        gap: 10px;
+    }
+
     .container {
         width: calc(100% - 20px);
-        margin: 0 5% 30px 5%;
+        margin: 0 5% 15px 5%;
         font-size: 1.05em;
         padding: 30px 20px;
     }
 
     .container .item {
         margin: 10px auto;
-        padding: 0 5px;
+        padding: 0 15px;
         width: 100%;
+        background-color: transparent;
+        border: none;
+    }
+
+    .container-text {
+        font-size: medium;
+    }
+
+    #swe {
+        padding: 0;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .skills:last-of-type {
+        margin-bottom: 15px;
+    }
+
+    .container ul {
+        padding-left: 2.5em;
     }
 
     .project-links {
@@ -716,7 +740,7 @@ footer {
     }
 
     h2 {
-        margin: 40px auto;
+        margin: 30px auto;
     }
 }
 
@@ -726,8 +750,4 @@ footer {
         font-size: 7.5vw;
     }
 }
-
-
-
-
 
